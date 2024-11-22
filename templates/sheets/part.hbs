@@ -1,0 +1,18 @@
+<form class="{{cssClass}}" autocomplete="off">
+  {{!log "part" this}}
+  <div class="item-sheet">
+    <div class="item-content">
+      <div class="name-title">
+        <input name="name" type="text" value="{{item.name}}" />
+      </div>
+      <div class="item-line">
+        <div class="field-name">{{{localize "WILDERFEAST.LABEL.durability"}}}</div>
+        <input class="input-short"  name="system.durability.value" type="number" value="{{item.system.durability.value}}" /> / 
+        <input class="input-short"  name="system.durability.max" type="number" value="{{item.system.durability.max}}" />
+      </div>
+      <div class="field-name">{{{localize "WILDERFEAST.LABEL.description"}}}</div>
+      {{editor descriptionHTML target="system.description" button=true engine="prosemirror" owner=owner editable=editable}}
+    </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,120 @@
+.action-chat {
+  background: var(--background-chat);
+  display: flex;
+  flex-direction: column;
+  img {
+    border: 0px;
+  }
+  .intro-chat {
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .intro-img {
+      padding: 5px;
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      object-position: center;
+      align-self: center;
+    }
+    .intro-right {
+      display: flex;
+      flex-direction: column;
+      .introText {
+        font-family: "zedou";
+        font-size: 1.8em;
+        width: 210px;
+        padding-top: 0.5em;
+        text-align: center;
+      }
+      .advantage{
+        font-family: "keycomic";
+        font-size: 1.5em;
+        width: 210px;
+        margin-top: -5px;
+        text-align: center;
+        color:#E0625C;
+      }
+    }
+  }
+  .dice-result {
+    font-family: "garamondpro";
+    font-size: 1.2em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 35px;
+    margin: 30px 80px;
+    gap: 10px;
+    .addtodice {
+      display: inline-block;
+      padding: 2px 6px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #1a4a8d;
+      background-color: #f68645;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px #af9383;
+    }
+
+    .addtodice:hover {
+      background-color: #f3cb90;
+    }
+
+    .addtodice:active {
+      background-color: #f68645;
+      box-shadow: 0 2px #666;
+      transform: translateY(4px);
+    }
+  }
+  .dicenb {
+    font-family: "keycomic";
+    color: #1a4a8d;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .resetbutton {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0px 50px 10px 50px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #1a4a8d;
+    background-color: #f68645;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #af9383;
+  }
+
+  .resetbutton:hover {
+    background-color: #f3cb90;
+  }
+
+  .resetbutton:active {
+    background-color: #f68645;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .finalText {
+    color: #1a4a8d;
+    font-size: 20px;
+    text-align: center;
+  }
+  .finalbox {
+    border: double 9px var(--wilder-orange-color);
+    background-color: #f3cb90;
+    margin: 0px 30px 10px 30px;
+    .successText {
+      color: #1a4a8d;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+}

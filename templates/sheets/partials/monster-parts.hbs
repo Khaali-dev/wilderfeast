@@ -1,0 +1,48 @@
+<div class="tool-zone">
+    <div class="techniques-zone" style="grid-column: 1;">
+        <div class="col-label techniques-label">
+            {{{localize "WILDERFEAST.LABEL.parts"}}}
+        </div>
+        {{#each parts as |part id|}}
+        <div class="item-contextmenu technique-border" data-item-id="{{part._id}}">
+            <details>
+                <summary class="technique-block">
+                    <div class="technique-line">
+                        <div class="technique-name">{{part.name}} : </div>
+                        <div class="stat_val item" data-item-id="{{_id}}">
+                            <input class="inline-edit part-durability-value input-short" data-field="system.durability.value" type="number"
+                                name="part.system.durability.value" value="{{part.system.durability.value}}" data-dtype="Number" min="0" 
+                                step="1" /> / 
+                            {{#if ../unlocked}}
+                            <input class="inline-edit part-durability-max input-short" data-field="system.durability.max" type="number" name="part.system.durability.max" value="{{part.system.durability.max}}" min="0" 
+                            step="1" />
+                            {{else}}
+                            {{part.system.durability.max}}
+                            {{/if}}
+                        </div>
+                    </div>
+                </summary>
+                <div class="desc">{{{part.system.descriptionhtml}}}</div>
+            </details>
+        </div>
+        {{/each}}
+    </div>
+    <div class="trait-zone" style="grid-column: 2;">
+        <div class="col-label traits-label">
+            {{{localize "WILDERFEAST.LABEL.traits"}}}
+        </div>
+        {{#each traits as |trait id|}}
+        <div class="item-contextmenu trait-border" data-item-id="{{trait._id}}">
+            <details>
+                <summary class="technique-block">
+                    <div class="technique-line">
+                        <div class="technique-name">{{trait.name}} : </div>
+                        <div class="field-name">{{trait.system.cost}}</div>
+                    </div>
+                </summary>
+                <div class="desc">{{{trait.system.descriptionhtml}}}</div>
+            </details>
+        </div>
+        {{/each}}
+    </div>
+</div>

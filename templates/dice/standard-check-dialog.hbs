@@ -1,0 +1,36 @@
+{{log "standard check dialog" this}}
+<form class="dialog-roll">
+  <section class="content">
+    <div class="dialog-grid">
+      <div class="left_col">
+        <div class="dialog-colgrid">
+          <div class="comp-titre">{{localize "WILDERFEAST.LABEL.style"}}</div>
+          <div class="comp-titre">
+            <select class="changefield" name="styles" data-action="style-change">
+            {{selectOptions styles selected=style labelAttr="label" blank="none"}}
+            </select>
+          </div>
+          <div class="comp-titre">{{localize "WILDERFEAST.LABEL.skill"}}</div>
+          <div class="comp-titre">
+            <select class="changefield" name="skills" data-action="skill-change">
+              {{selectOptions skills selected=skill labelAttr="label" blank="none"}}
+            </select>
+          </div>
+        </div>
+      </div>
+      {{#if isWilder}}
+          <div class="wild-chk">{{localize "WILDERFEAST.DIALOG.gowild"}}
+            <input class="changefield" type="checkbox" data-action="goWild-change" name="goWild" {{checked goWild}}>
+            </select>
+          </div>
+        {{/if}}
+        <div class="advantage">
+          <label class="changefield labelchk">{{radioBoxes groupName_adv choices_adv checked=advantage localize=true}}</label>
+        </div>
+      <button type="button" class="dialog-button" data-button="ok">
+        <i class="fa-solid fa-dice-d6"></i>
+        <label>{{localize "WILDERFEAST.DIALOG.button"}}</label>
+      </button>
+    </div></div>
+  </section>
+</form>

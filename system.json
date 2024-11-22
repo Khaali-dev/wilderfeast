@@ -1,0 +1,62 @@
+{
+  "id": "wilderfeast",
+  "title": "Wilderfeast",
+  "description": "Wilderfeast game system",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": [
+    {
+      "name": "Khaali"
+    }
+  ],
+  "esmodules": ["wilderfeast.mjs"],
+  "styles": ["css/wilderfeast.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "hbs", "json"],
+      "paths": ["lang/", "assets/", "templates/", "css/"]
+    }
+  },
+  "media": [
+    {
+      "type": "cover",
+      "thumbnail": "systems/wilderfeast/assets/images/logo_wilderfeast.webp",
+      "loop": false,
+      "flags": {}
+    },
+    {
+      "type": "setup",
+      "loop": false,
+      "thumbnail": "systems/wilderfeast/assets/images/logo_wilderfeast.webp",
+      "flags": {}
+    }
+  ],
+  "grid": {
+    "distance": 1.5,
+    "units": "m",
+    "type": 0
+  },
+  "background": "systems/wilderfeast/assets/images/logo_wilderfeast.webp",
+  "primaryTokenAttribute": "vitalite",
+  "secondaryTokenAttribute": "mental",
+  "initiative": "@styles.swift.value",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#"
+}

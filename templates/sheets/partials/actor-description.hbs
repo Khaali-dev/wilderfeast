@@ -1,0 +1,8 @@
+  <div class="description-bloc">
+      <h2>{{localize "WILDERFEAST.LABEL.background"}}</h2>
+      {{#if editable}}
+        {{editor descriptionHTML target="system.description" button=true engine="prosemirror" owner=owner editable=editable}}
+      {{else}}
+        {{{descriptionHTML}}}
+      {{/if}}
+  </div>

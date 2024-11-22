@@ -1,0 +1,20 @@
+{
+  "Actor": {
+    "types": [
+      "wilder",
+      "monster"
+    ],
+    "wilder": {},
+    "monster": {}
+  },
+  "Item": {
+    "types": [
+      "part",
+      "technique",
+      "trait"
+    ],
+    "part": {},
+    "technique": {},
+    "trait": {}
+  }
+}

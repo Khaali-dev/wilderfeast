@@ -1,0 +1,125 @@
+{
+  "TYPES": {
+    "Actor": {
+      "wilder": "Naturon",
+      "monster": "Monstre"
+    },
+    "Item": {
+      "part": "Partie",
+      "technique": "Technique",
+      "trait": "Trait"
+    }
+  },
+  "WILDERFEAST": {
+    "LABEL": {
+      "background": "Passé",
+      "condition": "Condition",
+      "cost": "Cost",
+      "description": "Description",
+      "durability": "Solidité",
+      "parts": "Parties",
+      "range": "Portée",
+      "skill": "Compétence",
+      "skills": "Compétences",
+      "stamina": "Stamina",
+      "style": "Style",
+      "styles": "Styles",
+      "techniques": "Techniques",
+      "tool": "Outil",
+      "traits": "Traits",
+      "unlockSheet": "Verrouiller / déverrouiller la feuille"
+    },
+    "STYLES": {
+      "mighty": {
+        "label": "Puissant",
+        "description": ""
+      },
+      "precise": {
+        "label": "Précis",
+        "description": ""
+      },
+      "swift": {
+        "label": "Rapide",
+        "description": ""
+      },
+      "tricky": {
+        "label": "Sournois",
+        "description": ""
+      }
+    },
+    "SKILLS": {
+      "assurance": {
+        "label": "Assurance",
+        "description": ""
+      },
+      "call": {
+        "label": "Cri",
+        "description": ""
+      },
+      "craft": {
+        "label": "Travail",
+        "description": ""
+      },
+      "cure": {
+        "label": "Soins",
+        "description": ""
+      },
+      "display": {
+        "label": "Démonstration",
+        "description": ""
+      },
+      "grab": {
+        "label": "Saisie",
+        "description": ""
+      },
+      "hoard": {
+        "label": "Réserve",
+        "description": ""
+      },
+      "search": {
+        "label": "Recherche",
+        "description": ""
+      },
+      "shot": {
+        "label": "Tir",
+        "description": ""
+      },
+      "strike": {
+        "label": "Coup",
+        "description": ""
+      },
+      "study": {
+        "label": "Analyse",
+        "description": ""
+      },
+      "traversal": {
+        "label": "Traversée",
+        "description": ""
+      }
+    },
+    "DIALOG": {
+      "advantage": "Avantage (4+)",
+      "disadvantage": "Désavantage (6+)",
+      "neutral": "Neutre (5+)",
+      "button": "Lancer les dés",
+      "cancel": "Annuler",
+      "flavor": "Faire un test",
+      "gowild": "Déchaîner le monstre ?",
+      "portrait": "Afficher le portrait de {actorName} à tous les joueurs et joueuses connectés."
+    },
+    "CHATMESSAGE": {
+      "stdActionIntro": "{style} {skill}",
+      "resetskillpoints": "Réinitialiser",
+      "skillPointsMax": "Points de compétence : ",
+      "skillPointsLeft": "Points de compétence à distrbuer : ",
+      "successnumber": "Succès : ",
+      "successquality": "Qualité : "
+    },
+    "TOOLTIP": {
+      "remove":"Supprimer",
+      "open":"Ouvrir",
+      "show": "Afficher",
+      "set_max": "`Remettre au max"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "TYPES": {
+    "Actor": {
+      "wilder": "Wilder",
+      "monster": "Monster"
+    },
+    "Item": {
+      "part": "Part",
+      "technique": "Technique",
+      "trait": "Trait"
+    }
+  },
+  "WILDERFEAST": {
+    "LABEL": {
+      "background": "Background",
+      "condition": "Condition",
+      "cost": "Cost",
+      "description": "Description",
+      "durability": "Durability",
+      "parts": "Parts",
+      "skill": "Skill",
+      "range": "Range",
+      "skills": "Skills",
+      "stamina": "Stamina",
+      "style": "Style",
+      "styles": "Styles",
+      "techniques": "Techniques",
+      "tool": "Tool",
+      "traits": "Traits",
+      "unlockSheet": "Lock / Unlock sheet"
+    },
+    "STYLES": {
+      "mighty": {
+        "label": "Mighty",
+        "description": ""
+      },
+      "precise": {
+        "label": "Precise",
+        "description": ""
+      },
+      "swift": {
+        "label": "Swift",
+        "description": ""
+      },
+      "tricky": {
+        "label": "Tricky",
+        "description": ""
+      }
+    },
+    "SKILLS": {
+      "assurance": {
+        "label": "Assurance",
+        "description": ""
+      },
+      "call": {
+        "label": "Call",
+        "description": ""
+      },
+      "craft": {
+        "label": "Craft",
+        "description": ""
+      },
+      "cure": {
+        "label": "Cure",
+        "description": ""
+      },
+      "display": {
+        "label": "Display",
+        "description": ""
+      },
+      "grab": {
+        "label": "Grab",
+        "description": ""
+      },
+      "hoard": {
+        "label": "Hoard",
+        "description": ""
+      },
+      "search": {
+        "label": "Search",
+        "description": ""
+      },
+      "shot": {
+        "label": "Shot",
+        "description": ""
+      },
+      "strike": {
+        "label": "Strike",
+        "description": ""
+      },
+      "study": {
+        "label": "Study",
+        "description": ""
+      },
+      "traversal": {
+        "label": "Traversal",
+        "description": ""
+      }
+    },
+    "DIALOG": {
+      "advantage": "Advantage (4+)",
+      "disadvantage": "Disadvantage (6+)",
+      "neutral": "Neutral (5+)",
+      "button": "Roll dices",
+      "cancel": "Cancel",
+      "flavor": "Roll a test",
+      "gowild": "Go wild ?",
+      "portrait": "Afficher le portrait de {actorName} à tous les joueurs et joueuses connectés."
+    },
+    "CHATMESSAGE": {
+      "stdActionIntro": "{style} {skill}",
+      "resetskillpoints": "Reset",
+      "skillPointsMax": "Skill Points : ",
+      "skillPointsLeft": "Skill Points left to distribute : ",
+      "successnumber":"Successes : ",
+      "successquality":"Quality : "
+    },
+    "TOOLTIP":{
+      "remove":"Remove",
+      "open":"Open",
+      "show":"Show",
+      "set_max":"`Set to max"
+    },
+
+      "wilderfeast": {
+        "CHATMESSAGE": {
+          "introDeployerAura": "{actingCharName} tente de déployer une aura.",
+          "introMental": "{actingCharName} utilise son Mental.",
+          "introPouvoir": "{actingCharName} utilise {pouvName}.",
+          "introArmeStd": "{actingCharName} utilise {armeName}.",
+          "introRetracterAura": "{actingCharName} rétracte une aura.",
+          "introForcerAura": "{actingCharName} déploie une aura.",
+          "introContrecoup": "{actingCharName} subit un contrecoup.",
+          "textForceraura": "{actingCharName} force le déploiement de l’aura du pouvoir : {nompouvoir}.",
+          "textRetracteraura": "{actingCharName} rétracte l’aura du pouvoir : {nompouvoir}.",
+          "largereussite": "Le test est largement réussi.",
+          "reussite": "Le test est réussi.",
+          "justereussite": "La réussite est limitée.",
+          "justerate": "Le test est raté de justesse, ou effet positif avec complications.",
+          "rate": "Le test est raté.",
+          "completementrate": "Le test est complètement raté, effets contraires aux attendus.",
+          "textdegats": "Dégâts de l’arme : {degats}",
+          "textdegats_doubles": "Dégâts de l’arme (doublés) : {degats}",
+          "textdegats_triples": "Dégâts de l’arme (triplés) : {degats}",
+          "textdeployeraura": "L’aura du pouvoir {nompouvoir} se déploie.",
+          "contrecoup": {
+            "reussite": "{actingCharName} a une simple sensation de tournis.",
+            "largereussite": "La douleur disparaît d’un coup, {actingCharName} récupère 1 point de Mental.",
+            "rate": "Ressentant une vive douleur, {actingCharName} doit interrompre ses actions pendant un tour de jeu ({degatsMentaux} points de dégâts au Mental).",
+            "completementrate": "{actingCharName} subit une douleur très forte et doit interrompre ses actions pendant deux tours de jeu ({degatsMentaux} points de dégâts au Mental)."
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,38 @@
+<div class="skills-styles">
+    <div class="styles_zone">
+        <div class="styles_label">{{localize "WILDERFEAST.LABEL.styles"}}</div>
+        <div class="style_grid">
+        {{#each system.styles as |style id|}}
+            <div class="style_name std-contextmenu" data-group="styles" data-sname="{{id}}">
+                {{localize style.label}}
+            </div>
+            <div class="style_val std-contextmenu" data-group="styles" data-sname="{{id}}">
+                {{#if ../unlocked}}
+                <input type="number" name="system.styles.{{id}}.value"
+                    value="{{getSystemProperty ../actor 'styles' id 'value'}}" min="0" placeholder="0" />
+                {{else}}
+                {{style.value}}
+                {{/if}}
+            </div>
+        {{/each}}
+        </div>
+    </div>
+    <div class="skills_zone">
+    <div class="skills_label">{{localize "WILDERFEAST.LABEL.skills"}}</div>
+        <div class="skill_grid">
+            {{#each system.skills as |skill id|}}
+            <div class="skill_name std-contextmenu" data-group="skills" data-sname="{{id}}">
+                {{localize skill.label}}
+            </div>
+            <div class="skill_val std-contextmenu" data-group="styles" data-sname="{{id}}">
+                {{#if ../unlocked}}
+                <input type="number" name="system.skills.{{id}}.value"
+                    value="{{getSystemProperty ../actor 'skills' id 'value'}}" min="0" max="5" placeholder="0" />
+                {{else}}
+                {{skill.value}}
+                {{/if}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

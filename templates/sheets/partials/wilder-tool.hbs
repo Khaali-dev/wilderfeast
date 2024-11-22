@@ -1,0 +1,66 @@
+<div class="tool-zone">
+    <div class="techniques-zone" style="grid-column: 1;">
+        <div class="tool-line">
+            <span class="tool-label">
+                <i class="fa-regular fa-pot-food"></i>
+                {{{localize "WILDERFEAST.LABEL.tool"}}} : 
+            </span>
+            <span class="tool-name">
+            {{#if unlocked}}
+                <input type="text" name="system.tool" value="{{actor.system.tool}}" />
+            {{else}}
+                {{actor.system.tool}}
+            {{/if}}
+            </span>
+            <span class="tool-label">
+                <i class="fa-regular fa-knife-kitchen"></i>
+            </span>
+        </div>
+        <div class="range-line">
+            <span class="range-label">
+                {{{localize "WILDERFEAST.LABEL.range"}}} : 
+            </span>
+            <span class="range-name">
+            {{#if unlocked}}
+                <input type="text" name="system.range" value="{{actor.system.range}}" />
+            {{else}}
+                {{actor.system.range}}
+            {{/if}}
+            </span>
+        </div>
+        <div class="col-label techniques-label">
+            {{{localize "WILDERFEAST.LABEL.techniques"}}}
+        </div>
+        {{#each techniques as |technique id|}}
+        <div class="item-contextmenu technique-border" data-item-id="{{technique._id}}">
+            <details>
+                <summary class="technique-block">
+                    <div class="technique-line">
+                        <div class="technique-name">{{technique.name}} : </div>
+                        <div class="field-name">{{technique.system.cost}}</div>
+                    </div>
+                </summary>
+                <div class="desc">{{{technique.system.descriptionhtml}}}</div>
+            </details>
+        </div>
+        {{/each}}
+    </div>
+    <div class="trait-zone" style="grid-column: 2;">
+        <div class="col-label traits-label">
+            {{{localize "WILDERFEAST.LABEL.traits"}}}
+        </div>
+        {{#each traits as |trait id|}}
+        <div class="item-contextmenu trait-border" data-item-id="{{trait._id}}">
+            <details>
+                <summary class="technique-block">
+                    <div class="technique-line">
+                        <div class="technique-name">{{trait.name}} : </div>
+                        <div class="field-name">{{trait.system.cost}}</div>
+                    </div>
+                </summary>
+                <div class="desc">{{{trait.system.descriptionhtml}}}</div>
+            </details>
+        </div>
+        {{/each}}
+    </div>
+</div>

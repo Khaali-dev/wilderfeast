@@ -1,0 +1,30 @@
+{{!log "chat standard check roll" this}}
+<div class="action-chat {{cssClass}}">
+  <div class="intro-chat">
+    {{#if (ne data.actingCharImg "icons/svg/mystery-man.svg")}}
+      <div class="intro-img">
+        <img src="{{data.actingCharImg}}" title="{{data.actingCharName}}" />
+      </div>
+    {{/if}}
+    <div class="intro-right">
+      <p class="introText"><a class="style_name" >{{localize data.styleLabel}}</a>  <a class="skill_name">{{localize data.skillLabel}}</a></p>
+      <p class="advantage">{{localize data.advantagelb}}</p>
+    </div>
+  </div>
+  <div class="dice-result">
+      <div><i class="{{data.actionDice}}"></i>&nbsp;&nbsp;&nbsp;<a class="dicenb">{{data.actionDiceResult}}</a></div>
+      <div>{{#if skillvalueLeft}}<a class="addtodice actiondice" data-dice-nb="action"><i class="fas fa-plus"></i></a>{{/if}}</div>
+      {{#each data.styleDiceResult as |dice id|}}
+      <div><i class="fas fa-dice-d6"></i>&nbsp;&nbsp;&nbsp;<a class="dicenb">{{dice}}</a></div>
+      <div>{{#if ../skillvalueLeft}}<a class="addtodice skilldice" data-dice-nb="{{id}}"><i class="fas fa-plus"></i></a>{{/if}}</div>
+      {{/each}}
+  </div>
+  <p class="finalText">{{{localize "WILDERFEAST.CHATMESSAGE.skillPointsMax"}}}<a class="skillvalueMax">{{data.skillvalue}}</a></p>
+  <p class="finalText">{{{localize "WILDERFEAST.CHATMESSAGE.skillPointsLeft"}}}<a class="skillvalueLeft">{{skillvalueLeft}}</a></p>
+  <p class="resetbutton">{{{localize "WILDERFEAST.CHATMESSAGE.resetskillpoints"}}}</p>
+  <p class="finalText">{{{data.finalText}}}</p>
+  <div class="finalbox">
+    <p class="successText">{{{localize "WILDERFEAST.CHATMESSAGE.successnumber"}}}<a class="successnumber">{{data.success}}</a></p>
+    <p class="successText">{{{localize "WILDERFEAST.CHATMESSAGE.successquality"}}}<a class="successquality">{{data.actionDiceResult}}</a></p>
+  </div>
+</div>
