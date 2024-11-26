@@ -563,7 +563,12 @@
 }
 @font-face {
   font-family: "keycomic";
-  src: url("../assets/fonts/key-comic.ttf") format("truetype");
+  src: url("../assets/fonts/hamburadul-regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "keycomic";
+  src: url("../assets/fonts/hamburadul-italic.ttf") format("truetype");
+  font-style: italic;
 }
 .style_name {
   font-family: "zedou";

@@ -25,6 +25,11 @@
       "lang": "fr",
       "name": "French",
       "path": "lang/fr.json"
+    },
+    {
+      "lang": "de",
+      "name": "Deutsche ",
+      "path": "lang/de.json"
     }
   ],
   "flags": {

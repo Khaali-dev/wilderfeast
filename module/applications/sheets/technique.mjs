@@ -14,7 +14,6 @@ export default class TechniqueSheet extends WilderfeastItemSheet {
       width: 400,
       classes: [SYSTEM.id, "sheet", "item", this.itemType],
       template: `systems/${SYSTEM.id}/templates/sheets/${this.itemType}.hbs`,
-      resizable: true,
     });
   }
 

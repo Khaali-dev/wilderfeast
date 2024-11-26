@@ -13,8 +13,7 @@ export default class PartSheet extends WilderfeastItemSheet {
       height: 600,
       width: 400,
       classes: [SYSTEM.id, "sheet", "item", this.itemType],
-      template: `systems/${SYSTEM.id}/templates/sheets/${this.itemType}.hbs`,
-      resizable: true,
+      template: `systems/${SYSTEM.id}/templates/sheets/${this.itemType}.hbs`
     });
   }
 

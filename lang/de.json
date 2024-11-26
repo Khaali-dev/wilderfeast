@@ -1,0 +1,125 @@
+{
+  "TYPES": {
+    "Actor": {
+      "wilder": "Wildhüter",
+      "monster": "Monster"
+    },
+    "Item": {
+      "part": "Teil",
+      "technique": "Technik",
+      "trait": "Eigenschaft"
+    }
+  },
+  "WILDERFEAST": {
+    "LABEL": {
+      "background": "Biographie",
+      "condition": "Zustand",
+      "cost": "Kosten",
+      "description": "Beschreibung",
+      "durability": "Haltbarkeit",
+      "parts": "Teile",
+      "skill": "Fähigkeit",
+      "range": "Reichweite",
+      "skills": "Fähigkeiten",
+      "stamina": "Ausdauer",
+      "style": "Stil",
+      "styles": "Stile",
+      "techniques": "Techniken",
+      "tool": "Werkzeug",
+      "traits": "Eigenschaften",
+      "unlockSheet": "Sperren / Entsperren des Bogens"
+    },
+    "STYLES": {
+      "mighty": {
+        "label": "Mächtig",
+        "description": ""
+      },
+      "precise": {
+        "label": "Präzise",
+        "description": ""
+      },
+      "swift": {
+        "label": "Flink",
+        "description": ""
+      },
+      "tricky": {
+        "label": "Trickreich",
+        "description": ""
+      }
+    },
+    "SKILLS": {
+      "assurance": {
+        "label": "Zusicherung",
+        "description": ""
+      },
+      "call": {
+        "label": "Ruf",
+        "description": ""
+      },
+      "craft": {
+        "label": "Handwerk",
+        "description": ""
+      },
+      "cure": {
+        "label": "Heilung",
+        "description": ""
+      },
+      "display": {
+        "label": "Darstellung",
+        "description": ""
+      },
+      "grab": {
+        "label": "Griff",
+        "description": ""
+      },
+      "hoard": {
+        "label": "Horten",
+        "description": ""
+      },
+      "search": {
+        "label": "Suchen",
+        "description": ""
+      },
+      "shot": {
+        "label": "Schuss",
+        "description": ""
+      },
+      "strike": {
+        "label": "Schlag",
+        "description": ""
+      },
+      "study": {
+        "label": "Beobachtung",
+        "description": ""
+      },
+      "traversal": {
+        "label": "Durchquerung",
+        "description": ""
+      }
+    },
+    "DIALOG": {
+      "advantage": "Vorteil (4+)",
+      "disadvantage": "Nachteil (6+)",
+      "neutral": "Neutral (5+)",
+      "button": "Würfeln",
+      "cancel": "Abbruch",
+      "flavor": "Einen Test würfeln",
+      "gowild": "Wild sein?",
+      "portrait": "Das Porträt von {actorName} allen angemeldeten Spielerinnen und Spielern anzeigen."
+    },
+    "CHATMESSAGE": {
+      "stdActionIntro": "{style} {skill}",
+      "resetskillpoints": "Zurücksetzen",
+      "skillPointsMax": "Fähigkeits Punkte : ",
+      "skillPointsLeft": "Noch zu verteilende Fähigkeits Punkte : ",
+      "successnumber": "Erfolge : ",
+      "successquality": "Erfolgsqualität : "
+    },
+    "TOOLTIP": {
+      "remove": "Entfernen",
+      "open": "Öffnen",
+      "show": "Zeige",
+      "set_max": "`Auf's Maximum setzen"
+    }
+  }
+}

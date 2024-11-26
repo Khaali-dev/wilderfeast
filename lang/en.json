@@ -105,51 +105,21 @@
       "cancel": "Cancel",
       "flavor": "Roll a test",
       "gowild": "Go wild ?",
-      "portrait": "Afficher le portrait de {actorName} à tous les joueurs et joueuses connectés."
+      "portrait": "Show {actorName} portrait to connected players."
     },
     "CHATMESSAGE": {
       "stdActionIntro": "{style} {skill}",
       "resetskillpoints": "Reset",
       "skillPointsMax": "Skill Points : ",
       "skillPointsLeft": "Skill Points left to distribute : ",
-      "successnumber":"Successes : ",
-      "successquality":"Quality : "
+      "successnumber": "Successes : ",
+      "successquality": "Quality : "
     },
-    "TOOLTIP":{
-      "remove":"Remove",
-      "open":"Open",
-      "show":"Show",
-      "set_max":"`Set to max"
-    },
-
-      "wilderfeast": {
-        "CHATMESSAGE": {
-          "introDeployerAura": "{actingCharName} tente de déployer une aura.",
-          "introMental": "{actingCharName} utilise son Mental.",
-          "introPouvoir": "{actingCharName} utilise {pouvName}.",
-          "introArmeStd": "{actingCharName} utilise {armeName}.",
-          "introRetracterAura": "{actingCharName} rétracte une aura.",
-          "introForcerAura": "{actingCharName} déploie une aura.",
-          "introContrecoup": "{actingCharName} subit un contrecoup.",
-          "textForceraura": "{actingCharName} force le déploiement de l’aura du pouvoir : {nompouvoir}.",
-          "textRetracteraura": "{actingCharName} rétracte l’aura du pouvoir : {nompouvoir}.",
-          "largereussite": "Le test est largement réussi.",
-          "reussite": "Le test est réussi.",
-          "justereussite": "La réussite est limitée.",
-          "justerate": "Le test est raté de justesse, ou effet positif avec complications.",
-          "rate": "Le test est raté.",
-          "completementrate": "Le test est complètement raté, effets contraires aux attendus.",
-          "textdegats": "Dégâts de l’arme : {degats}",
-          "textdegats_doubles": "Dégâts de l’arme (doublés) : {degats}",
-          "textdegats_triples": "Dégâts de l’arme (triplés) : {degats}",
-          "textdeployeraura": "L’aura du pouvoir {nompouvoir} se déploie.",
-          "contrecoup": {
-            "reussite": "{actingCharName} a une simple sensation de tournis.",
-            "largereussite": "La douleur disparaît d’un coup, {actingCharName} récupère 1 point de Mental.",
-            "rate": "Ressentant une vive douleur, {actingCharName} doit interrompre ses actions pendant un tour de jeu ({degatsMentaux} points de dégâts au Mental).",
-            "completementrate": "{actingCharName} subit une douleur très forte et doit interrompre ses actions pendant deux tours de jeu ({degatsMentaux} points de dégâts au Mental)."
-          }
-        }
-      }
+    "TOOLTIP": {
+      "remove": "Remove",
+      "open": "Open",
+      "show": "Show",
+      "set_max": "`Set to max"
     }
   }
+}
