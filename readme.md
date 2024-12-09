@@ -9,7 +9,7 @@
 
 </div>
 
-<p>This is an <strong>unofficial</stronfg> game system to run games based upon the "<em>Wilderfeast</em>" RPG system on the game platform Foundry Virtual Tabletop.</p>
+<p>This is a game system to run games based upon the "<em>Wilderfeast</em>" RPG system on the game platform Foundry Virtual Tabletop, and made available with the editor's permission.</p>
 
 <p style="margin-left: 10%;"> <img src="/assets/system/system-exemple1.webp" /></p>
 
