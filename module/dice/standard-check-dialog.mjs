@@ -52,6 +52,8 @@ export default class ActionDialog extends Dialog {
     const action = event.currentTarget.dataset.action;
     const newValue = event.currentTarget.value;
     const actionMap = {
+      "style-change": () => ({ style: newValue }),
+      "skill-change": () => ({ skill: newValue }),
       "rollMode-change": () => ({ rollMode: newValue }),
     };
 

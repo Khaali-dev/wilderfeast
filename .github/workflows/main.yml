@@ -155,4 +155,3 @@ jobs:
           contentType: 'application/json'
           customHeaders: '{"Authorization": "${{ secrets.FVTT_PACKAGE_RELEASE_TOKEN }}"}'
           data: '{"id": "wilderfeast","dry-run":false,"release":{"version":"${{github.event.release.tag_name}}","manifest":"https://github.com/Khaali-dev/wilderfeast/releases/download/${{github.event.release.tag_name}}/system.json","notes":"https://github.com/Khaali-dev/wilderfeast/blob/main/CHANGELOG.md","compatibility":{"minimum":"12","verified":"12","maximum":"12"}}}'
-          

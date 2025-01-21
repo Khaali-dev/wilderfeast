@@ -1,3 +1,5 @@
+# 1.1.0
+Bug on rolls defaulting on mighty assurance
 # 1.0.0
 Initial release
 # 0.0.2
