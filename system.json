@@ -23,13 +23,25 @@
     },
     {
       "lang": "fr",
-      "name": "French",
+      "name": "Français",
       "path": "lang/fr.json"
     },
     {
       "lang": "de",
       "name": "Deutsche ",
       "path": "lang/de.json"
+    },
+    {
+      "lang": "pt-br",
+      "name": "Portugues (Brasil)",
+      "path": "lang/pt-br.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt-BR",
+      "name": "Português do Brasil",
+      "path": "lang/pt-br.json",
+      "flags": {}
     }
   ],
   "flags": {

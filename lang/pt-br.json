@@ -1,0 +1,125 @@
+{
+  "TYPES": {
+    "Actor": {
+      "wilder": "Feral",
+      "monster": "Monstro"
+    },
+    "Item": {
+      "part": "Parte",
+      "technique": "Tecnica",
+      "trait": "Traço"
+    }
+  },
+  "WILDERFEAST": {
+    "LABEL": {
+      "background": "Background",
+      "condition": "Condição",
+      "cost": "Custo",
+      "description": "Descrição",
+      "durability": "Durabilidade",
+      "parts": "Partes",
+      "skill": "Habilidade",
+      "range": "Alcance",
+      "skills": "Habilidades",
+      "stamina": "Vigor",
+      "style": "Estilo",
+      "styles": "Estilos",
+      "techniques": "Tecnicas",
+      "tool": "Utensílio",
+      "traits": "Traços",
+      "unlockSheet": "Travar / Destravar ficha"
+    },
+    "STYLES": {
+      "mighty": {
+        "label": "Poderoso",
+        "description": ""
+      },
+      "precise": {
+        "label": "Preciso",
+        "description": ""
+      },
+      "swift": {
+        "label": "Ligeiro",
+        "description": ""
+      },
+      "tricky": {
+        "label": "Sagaz",
+        "description": ""
+      }
+    },
+    "SKILLS": {
+      "assurance": {
+        "label": "Agarrar",
+        "description": ""
+      },
+      "call": {
+        "label": "Armazenar",
+        "description": ""
+      },
+      "craft": {
+        "label": "Assegurar",
+        "description": ""
+      },
+      "cure": {
+        "label": "Atirar",
+        "description": ""
+      },
+      "display": {
+        "label": "Atravessar",
+        "description": ""
+      },
+      "grab": {
+        "label": "Chamar",
+        "description": ""
+      },
+      "hoard": {
+        "label": "Curar",
+        "description": ""
+      },
+      "search": {
+        "label": "Estudar",
+        "description": ""
+      },
+      "shot": {
+        "label": "Exibir",
+        "description": ""
+      },
+      "strike": {
+        "label": "Golpear",
+        "description": ""
+      },
+      "study": {
+        "label": "Manufaturar",
+        "description": ""
+      },
+      "traversal": {
+        "label": "Procurar",
+        "description": ""
+      }
+    },
+    "DIALOG": {
+      "advantage": "Vantagem (4+)",
+      "disadvantage": "Desvantagem (6+)",
+      "neutral": "Neutro (5+)",
+      "button": "Rolar dados",
+      "cancel": "Cancelar",
+      "flavor": "Rolar um teste",
+      "gowild": "Virar o bicho ?",
+      "portrait": "Mostrar a foto de {actorName} para os jogadores conectados."
+    },
+    "CHATMESSAGE": {
+      "stdActionIntro": "{style} {skill}",
+      "resetskillpoints": "Resetar",
+      "skillPointsMax": "Pontos de habilidade : ",
+      "skillPointsLeft": "Pontos de habilidade sobrando para distribuir : ",
+      "successnumber": "Sucessos : ",
+      "successquality": "Qualidade : "
+    },
+    "TOOLTIP": {
+      "remove": "Remover",
+      "open": "Abrir",
+      "show": "Mostrar",
+      "set_max": "Definir para o máximo"
+    }
+  }
+}

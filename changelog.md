@@ -1,3 +1,6 @@
+# 1.2.0
+Portuguese translation
+thanks to Mauricio
 # 1.1.0
 Bug on rolls defaulting on mighty assurance
 # 1.0.0
