@@ -1,5 +1,5 @@
 .wilderfeast.sheet.actor .window-content {
-  border: 10px solid #F18722;
+  border: 10px solid #f18722;
   background: var(--wilder-background-color);
   font-family: "garamond";
 }
@@ -87,7 +87,7 @@
   height: 100%;
   border: none;
 }
-.wilderfeast.sheet.actor .wilder-header .both_stats{
+.wilderfeast.sheet.actor .wilder-header .both_stats {
   width: 300px;
   display: flex;
 }
@@ -110,10 +110,10 @@
   color: white;
   text-transform: uppercase;
 }
-.wilderfeast.sheet.actor .wilder-header .stats_block .stat_content{
+.wilderfeast.sheet.actor .wilder-header .stats_block .stat_content {
   display: block;
 }
-.wilderfeast.sheet.actor .wilder-header .stats_block .stat_dif{
+.wilderfeast.sheet.actor .wilder-header .stats_block .stat_dif {
   font-family: zedou;
   font-size: 12px;
   font-weight: bold;
@@ -276,7 +276,7 @@
   border: double 5px #2d6956;
   grid-column: 2;
 }
-.wilderfeast.sheet.actor .techniques-zone{
+.wilderfeast.sheet.actor .tool-zone .techniques-zone {
   margin-left: 5px;
   max-height: 45vh;
   overflow-y: auto;

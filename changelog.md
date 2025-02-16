@@ -1,3 +1,6 @@
+# 1.3.0
+Better sheet appearance
+thanks to Alexandre
 # 1.2.0
 Portuguese translation
 thanks to Mauricio
