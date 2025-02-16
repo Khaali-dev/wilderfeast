@@ -17,38 +17,64 @@
     <div class="charname">
         <input name="name" type="text" value="{{actor.name}}" />
     </div>
-    <div class="stats_block std-contextmenu" style="grid-row: 1/2;grid-column: 4/5;" data-group="stamina">
-        <div class="stat_name">
-            {{localize "WILDERFEAST.LABEL.stamina"}}
+    <div class="both_stats">
+        <div class="stats_block std-contextmenu" style="grid-row: 1/2;grid-column: 4/5;" data-group="stamina">
+            <div class="stat_name">
+                {{localize "WILDERFEAST.LABEL.stamina"}}
+            </div>
+            <div class="stat_content">
+                <div style="display: flex; justify-content:space-around; padding-top:3px">
+                    <div class="stat_dif">
+                        Current:
+                    </div>
+                    <div class="stat_dif">
+                        Max:
+                    </div>
+                </div>
+                <div style="display:flex;justify-content:space-around">
+                    <div class="stat_val">
+                        <input type="number" name="system.stamina.value" value="{{actor.system.stamina.value}}" min="0"
+                            step="1" />
+                    </div>
+                    <div class="stat_val">
+                        {{#if unlocked}}
+                        <input type="number" name="system.stamina.max" value="{{actor.system.stamina.max}}" min="0" 
+                                step="1" />
+                        {{else}}
+                            <span style="padding-top: 4px;">{{actor.system.stamina.max}}</span>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="stat_val">
-            <input type="number" name="system.stamina.value" value="{{actor.system.stamina.value}}" min="0"
-                step="1" /> /
-        </div>
-        <div class="stat_val">
-        {{#if unlocked}}
-        <input type="number" name="system.stamina.max" value="{{actor.system.stamina.max}}" min="0" 
-                step="1" />
-        {{else}}
-            {{actor.system.stamina.max}}
-        {{/if}}
-        </div>
-    </div>
-    <div class="stats_block std-contextmenu" style="grid-row: 2/3;grid-column: 4/5;" data-group="durability">
-        <div class="stat_name">
-            {{localize "WILDERFEAST.LABEL.durability"}}
-        </div>
-        <div class="stat_val">
-            <input type="number" name="system.durability.value" value="{{actor.system.durability.value}}" min="0" 
-                step="1" /> /
-        </div>
-        <div class="stat_val">
-        {{#if unlocked}}
-        <input type="number" name="system.durability.max" value="{{actor.system.durability.max}}" min="0" 
-                step="1" />
-        {{else}}
-            {{actor.system.durability.max}}
-        {{/if}}
+        <div class="stats_block std-contextmenu" style="grid-row: 2/3;grid-column: 4/5;" data-group="durability">
+            <div class="stat_name">
+                {{localize "WILDERFEAST.LABEL.durability"}}
+            </div>
+            <div class="stat_content" style="display: block;">
+                <div style="display: flex; justify-content:space-around; padding-top:3px">
+                    <div class="stat_dif">
+                        Current:
+                    </div>
+                    <div class="stat_dif">
+                        Max:
+                    </div>
+                </div>
+                <div style="display:flex; justify-content:space-around">
+                    <div class="stat_val">
+                        <input type="number" name="system.durability.value" value="{{actor.system.durability.value}}" min="0" 
+                            step="1" />
+                    </div>
+                    <div class="stat_val">
+                        {{#if unlocked}}
+                        <input type="number" name="system.durability.max" value="{{actor.system.durability.max}}" min="0" 
+                                step="1" />
+                        {{else}}
+                            <span style="padding-top: 4px;">{{actor.system.stamina.max}}</span>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>

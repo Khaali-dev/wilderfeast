@@ -7,7 +7,7 @@ export default class WilderfeastActorSheet extends ActorSheet {
       template: `systems/${SYSTEM.id}/templates/sheets/${this.actorType}.hbs`,
       resizable: true,
       scrollY: [],
-      width: 800,
+      width: 850,
       height: 800,
       tabs: [{ navSelector: ".tabs", contentSelector: ".sheet-body", initial: "competences" }],
     });
