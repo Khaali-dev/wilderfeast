@@ -1,3 +1,5 @@
+# 1.3.1
+Bug durability max
 # 1.3.0
 Better sheet appearance
 thanks to Alexandre
