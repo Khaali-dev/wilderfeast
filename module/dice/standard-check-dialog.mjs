@@ -81,7 +81,7 @@ export default class ActionDialog extends Dialog {
    */
   _onSubmit(html) {
     const form = html.querySelector("form");
-    const fd = new FormDataExtended(form);
+    const fd = new foundry.applications.ux.FormDataExtended(form);
     this.roll.initialize(fd.object);
     return this.roll;
   }
