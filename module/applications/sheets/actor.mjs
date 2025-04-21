@@ -21,8 +21,8 @@ export default class WilderfeastActorSheet extends foundry.appv1.sheets.ActorShe
     context.system = this.document.system;
 
 
-    context.descriptionHTML = await TextEditor.enrichHTML(this.actor.system.description, { async: false });
-    context.equipementHTML = await TextEditor.enrichHTML(this.actor.system.equipement, { async: false });
+    context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.description, { async: false });
+    context.equipementHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.equipement, { async: false });
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
     return context;
