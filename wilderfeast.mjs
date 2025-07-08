@@ -18,9 +18,9 @@ Hooks.once("init", async function () {
     wilder: models.WilderfeastWilder,
     monster: models.WilderfeastMonster,
   };
-  Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet(SYSTEM.id, applications.WilderSheet, { types: ["wilder"], makeDefault: true });
-  Actors.registerSheet(SYSTEM.id, applications.MonsterSheet, { types: ["monster"], makeDefault: true });
+  foundry.documents.collections.Actors.unregisterSheet("core", foundry.appv1.sheets.ActorSheet);
+  foundry.documents.collections.Actors.registerSheet(SYSTEM.id, applications.WilderSheet, { types: ["wilder"], makeDefault: true });
+  foundry.documents.collections.Actors.registerSheet(SYSTEM.id, applications.MonsterSheet, { types: ["monster"], makeDefault: true });
 
   // Configuration document Item
   CONFIG.Item.documentClass = documents.WilderfeastItem;
@@ -30,17 +30,17 @@ Hooks.once("init", async function () {
     trait: models.WilderfeastTrait,
   };
 
-  Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet(SYSTEM.id, applications.PartSheet, { types: ["part"], makeDefault: true });
-  Items.registerSheet(SYSTEM.id, applications.TechniqueSheet, { types: ["technique"], makeDefault: true });
-  Items.registerSheet(SYSTEM.id, applications.TraitSheet, { types: ["trait"], makeDefault: true });
+  foundry.documents.collections.Items.unregisterSheet("core", foundry.appv1.sheets.ItemSheet);
+  foundry.documents.collections.Items.registerSheet(SYSTEM.id, applications.PartSheet, { types: ["part"], makeDefault: true });
+  foundry.documents.collections.Items.registerSheet(SYSTEM.id, applications.TechniqueSheet, { types: ["technique"], makeDefault: true });
+  foundry.documents.collections.Items.registerSheet(SYSTEM.id, applications.TraitSheet, { types: ["trait"], makeDefault: true });
 
   CONFIG.ChatMessage.documentClass = dice.WilderfeastChatMessage;
 
   // Dice system configuration
   CONFIG.Dice.rolls.push(dice.StandardCheck);
 
-  loadTemplates([
+  foundry.applications.handlebars.loadTemplates([
     `systems/${SYSTEM.id}/templates/sheets/partials/actor-description.hbs`,
     `systems/${SYSTEM.id}/templates/sheets/partials/wilder-header.hbs`,
     `systems/${SYSTEM.id}/templates/sheets/partials/actor-skills.hbs`,

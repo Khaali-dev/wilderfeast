@@ -19,18 +19,17 @@
         </div>
       </div>
       {{#if isWilder}}
-          <div class="wild-chk">{{localize "WILDERFEAST.DIALOG.gowild"}}
-            <input class="changefield" type="checkbox" data-action="goWild-change" name="goWild" {{checked goWild}}>
-            </select>
-          </div>
-        {{/if}}
-        <div class="advantage">
-          <label class="changefield labelchk">{{radioBoxes groupName_adv choices_adv checked=advantage localize=true}}</label>
+        <div class="wild-chk">{{localize "WILDERFEAST.DIALOG.gowild"}}
+          <input class="changefield" type="checkbox" data-action="goWild-change" name="goWild" {{checked goWild}}>
         </div>
+      {{/if}}
+      <div class="advantage">
+        <label class="changefield labelchk">{{radioBoxes groupName_adv choices_adv checked=advantage localize=true}}</label>
+      </div>
       <button type="button" class="dialog-button" data-button="ok">
         <i class="fa-solid fa-dice-d6"></i>
         <label>{{localize "WILDERFEAST.DIALOG.button"}}</label>
       </button>
-    </div></div>
+    </div>
   </section>
 </form>

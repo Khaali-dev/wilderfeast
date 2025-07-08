@@ -17,10 +17,10 @@ export default class MonsterSheet extends WilderfeastActorSheet {
     context.parts = this.actor.items.filter((item) => item.type == "part");
     context.traits = this.actor.items.filter((item) => item.type == "trait");
     for (let element of context.parts) {
-      element.system.descriptionhtml = await TextEditor.enrichHTML(element.system.description, { async: false });
+      element.system.descriptionhtml = await foundry.applications.ux.TextEditor.implementation.enrichHTML(element.system.description, { async: false });
     }
     for (let element of context.traits) {
-      element.system.descriptionhtml = await TextEditor.enrichHTML(element.system.description, { async: false });
+      element.system.descriptionhtml = await foundry.applications.ux.TextEditor.implementation.enrichHTML(element.system.description, { async: false });
     }
 
     return context;

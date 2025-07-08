@@ -125,7 +125,7 @@ export default class WilderfeastActor extends Actor {
       },
     };
     // Create the chat content
-    let content = await renderTemplate("systems/wilderfeast/templates/dice/standard-check-roll.hbs", data);
+    let content = await foundry.applications.handlebars.renderTemplate("systems/wilderfeast/templates/dice/standard-check-roll.hbs", data);
 
     // Create the chat data
     const chatData = foundry.utils.duplicate(data);

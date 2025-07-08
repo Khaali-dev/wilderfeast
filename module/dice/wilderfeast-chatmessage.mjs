@@ -6,10 +6,9 @@ export default class WilderfeastChatMessage extends ChatMessage {
   /* -------------------------------------------- */
 
   /** @inheritDoc */
-  async getHTML(...args) {
-    const html = await super.getHTML();
-    console.log("html", html);
-    this._enrichChatCard(html[0]);
+  async renderHTML(options = {}) {
+    const html = await super.renderHTML(options);
+    this._enrichChatCard(html);
 
     return html;
   }

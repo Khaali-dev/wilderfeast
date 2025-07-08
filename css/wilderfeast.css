@@ -581,10 +581,11 @@
 .dialog-roll .labelchk {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   margin-top: 20px;
 }
 .dialog-roll .labelchk .checkbox {
-  font-size: 22px;
+  font-size: 20px;
 }
 .prosemirror menu {
   font-size: 0.8em;

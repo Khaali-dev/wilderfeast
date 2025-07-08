@@ -1,3 +1,5 @@
+# 2.0.0
+Compatibility Foundry v13
 # 1.3.1
 Bug durability max
 # 1.3.0

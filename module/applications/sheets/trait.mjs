@@ -20,7 +20,7 @@ export default class TraitSheet extends WilderfeastItemSheet {
   /** @override */
   async getData(options) {
     const context = await super.getData(options);
-    context.descriptionHTML = await TextEditor.enrichHTML(this.item.system.description, { async: false });
+    context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.item.system.description, { async: false });
     
     return context;
   }

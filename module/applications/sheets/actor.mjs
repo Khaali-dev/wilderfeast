@@ -1,4 +1,4 @@
-export default class WilderfeastActorSheet extends ActorSheet {
+export default class WilderfeastActorSheet extends foundry.appv1.sheets.ActorSheet {
   /** @inheritdoc */
   static get defaultOptions() {
     const options = super.defaultOptions;
@@ -21,8 +21,8 @@ export default class WilderfeastActorSheet extends ActorSheet {
     context.system = this.document.system;
 
 
-    context.descriptionHTML = await TextEditor.enrichHTML(this.actor.system.description, { async: false });
-    context.equipementHTML = await TextEditor.enrichHTML(this.actor.system.equipement, { async: false });
+    context.descriptionHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.description, { async: false });
+    context.equipementHTML = await foundry.applications.ux.TextEditor.implementation.enrichHTML(this.actor.system.equipement, { async: false });
     context.unlocked = this.actor.isUnlocked;
     context.locked = !this.actor.isUnlocked;
     return context;
@@ -128,8 +128,8 @@ export default class WilderfeastActorSheet extends ActorSheet {
 
   /** @inheritdoc */
   _contextMenu(html) {
-    ContextMenu.create(this, html, ".item-contextmenu", this._getItemEntryContextOptions());
-    ContextMenu.create(this, html, ".std-contextmenu", this._getStdContextOptions());
+    foundry.applications.ux.ContextMenu.create(this, html, ".item-contextmenu", this._getItemEntryContextOptions());
+    foundry.applications.ux.ContextMenu.create(this, html, ".std-contextmenu", this._getStdContextOptions());
   }
 
   /**

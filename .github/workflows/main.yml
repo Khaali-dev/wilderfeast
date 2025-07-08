@@ -120,7 +120,6 @@ jobs:
              ./system.zip                        \
             `# The files that will be included.` \
             system.json                          \
-            template.json                        \
             wilderfeast.mjs                      \
             CHANGELOG.md                         \
             README.md                            \
