@@ -5,7 +5,8 @@
   "version": "#{VERSION}#",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
+    "verified": "13",
+    "maximum": "13"
   },
   "authors": [
     {
@@ -14,6 +15,17 @@
   ],
   "esmodules": ["wilderfeast.mjs"],
   "styles": ["css/wilderfeast.css"],
+  "documentTypes": {
+    "Actor": {
+      "wilder": { "htmlFields": ["equipment","description"] },
+      "monster": { "htmlFields": ["description","behavior","quickref"] } 
+    },
+    "Item": {
+      "part": { "htmlFields": ["description"] },
+      "technique": { "htmlFields": ["description"] },
+      "trait": { "htmlFields": ["description"] }
+    }
+  },
   "packs": [],
   "languages": [
     {
