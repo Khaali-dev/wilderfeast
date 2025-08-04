@@ -1,3 +1,6 @@
+# 2.0.1
+German translation update
+thanks to FederSchakal
 # 2.0.0
 Compatibility Foundry v13
 # 1.3.1
